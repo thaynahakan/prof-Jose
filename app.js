@@ -1,10 +1,11 @@
 const express = require('express');
 const app = express();
 
- app.get("/", async (req, res) => {
-    res.send("Página inicial");
- }); 
 
- app.listen(8480, () => {
-    console.log("Servidor iniciado na porta 8480: http://localhost:8480");
- });
+app.get("/", async (req, res) => {
+    res.send("Página inicial -  Bittencourt Baimyná");
+});
+
+app.listen(4096, () => {
+    console.log("Servidor acessado na porta 4096: http://localhost:4096");
+});
